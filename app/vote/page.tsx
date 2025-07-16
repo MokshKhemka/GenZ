@@ -5,21 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import {
-  ArrowLeft,
-  Search,
-  Heart,
-  MessageSquare,
-  Share2,
-  TrendingUp,
-  Clock,
-  Users,
-  Star,
-  ThumbsUp,
-  ThumbsDown,
-} from "lucide-react"
+import { Heart, ArrowLeft, Clock, Star } from "lucide-react"
 
 export default function VotePage() {
   const [votes, setVotes] = useState<{ [key: string]: "up" | "down" | null }>({})
