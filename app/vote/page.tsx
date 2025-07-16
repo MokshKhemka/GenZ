@@ -8,9 +8,9 @@ import { Badge } from "@/components/ui/badge"
 import { Heart, ArrowLeft, Clock, Star } from "lucide-react"
 
 export default function VotePage() {
-  const [votes, setVotes] = useState<{ [key: string]: "up" | "down" | null }>({})
+  const [votes, setVotes] = useState<{ [key: string]: "yes" | "no" | null }>({})
 
-  const handleVote = (surveyId: string, voteType: "up" | "down") => {
+  const handleVote = (surveyId: string, voteType: "yes" | "no") => {
     setVotes((prev) => ({
       ...prev,
       [surveyId]: prev[surveyId] === voteType ? null : voteType,

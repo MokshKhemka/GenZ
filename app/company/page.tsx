@@ -221,7 +221,7 @@ export default function CompanyDashboard() {
           <Card>
             <CardHeader>
               <CardTitle>Demographic Breakdown</CardTitle>
-              <CardDescription>Who's responding to your surveys</CardDescription>
+              <CardDescription>Who&apos;s responding to your surveys</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
