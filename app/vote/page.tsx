@@ -22,7 +22,6 @@ import {
 } from "lucide-react"
 
 export default function VotePage() {
-  const [activeTab, setActiveTab] = useState("trending")
   const [votes, setVotes] = useState<{ [key: string]: "up" | "down" | null }>({})
 
   const handleVote = (surveyId: string, voteType: "up" | "down") => {
@@ -37,7 +36,7 @@ export default function VotePage() {
       id: "1",
       company: "Starbucks",
       title: "Should Starbucks and Ghirardelli partner to launch a luxury drink?",
-      description: "We're considering a collaboration to create a premium, luxury beverage experience. Would you be interested?",
+      description: "We&apos;re considering a collaboration to create a premium, luxury beverage experience. Would you be interested?",
       category: "Product",
       timeLeft: "2 days left",
       responses: 1247,
@@ -49,7 +48,7 @@ export default function VotePage() {
       id: "2",
       company: "Nike",
       title: "Should we bring back retro colorways?",
-      description: "We're thinking about re-releasing some classic Air Jordan colorways from the 90s. What do you think?",
+      description: "We&apos;re thinking about re-releasing some classic Air Jordan colorways from the 90s. What do you think?",
       category: "Product",
       timeLeft: "5 days left",
       responses: 892,
@@ -73,7 +72,7 @@ export default function VotePage() {
       id: "4",
       company: "Netflix",
       title: "Would you watch a reality show about student entrepreneurs?",
-      description: "We're considering a new reality show following student founders building their startups. Would you tune in?",
+      description: "We&apos;re considering a new reality show following student founders building their startups. Would you tune in?",
       category: "Entertainment",
       timeLeft: "3 days left",
       responses: 3421,

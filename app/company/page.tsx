@@ -10,10 +10,10 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ArrowLeft, Plus, BarChart3, Users, TrendingUp, Eye, MessageSquare, Star } from "lucide-react"
+import { ArrowLeft, Plus, BarChart3, Users, TrendingUp, Star } from "lucide-react"
 
 export default function CompanyDashboard() {
-  const [activeTab, setActiveTab] = useState("dashboard")
+  // Removed unused activeTab and setActiveTab
 
   // Define recentSurveys array outside of JSX
   const recentSurveys = [
@@ -159,7 +159,7 @@ export default function CompanyDashboard() {
                   <div>
                     <Label htmlFor="description" className="text-base font-medium">Description (optional)</Label>
                     <p className="text-sm text-gray-500 mb-2">Add context or details for your survey (optional)</p>
-                    <Textarea id="description" placeholder="We're considering a collaboration to create a premium, luxury beverage experience. Would you be interested?" rows={3} />
+                    <Textarea id="description" placeholder="We&apos;re considering a collaboration to create a premium, luxury beverage experience. Would you be interested?" rows={3} />
                   </div>
                   <div>
                     <Label htmlFor="category" className="text-base font-medium">Category *</Label>
@@ -192,7 +192,7 @@ export default function CompanyDashboard() {
                       </div>
                     </div>
                     <h4 className="font-semibold mb-2">Should Starbucks and Ghirardelli partner to launch a luxury drink?</h4>
-                    <p className="text-sm text-gray-600 mb-3">We're considering a collaboration to create a premium, luxury beverage experience. Would you be interested?</p>
+                    <p className="text-sm text-gray-600 mb-3">We&apos;re considering a collaboration to create a premium, luxury beverage experience. Would you be interested?</p>
                     <div className="flex gap-2">
                       <Button size="sm" className="bg-green-500 hover:bg-green-600">Love it</Button>
                       <Button size="sm" variant="outline">Pass</Button>

@@ -26,7 +26,7 @@ export function FloatingHelp() {
             <CardHeader className="flex flex-row items-center justify-between">
               <div>
                 <CardTitle>Need Help? 🤝</CardTitle>
-                <CardDescription>We're here to help you get started</CardDescription>
+                <CardDescription>We&apos;re here to help you get started</CardDescription>
               </div>
               <Button variant="ghost" size="sm" onClick={() => setIsOpen(false)}>
                 <X className="w-4 h-4" />
